@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#FBF7EE" />
+  <title>TaMarcado — Tá marcado, beleza?</title>
+  <meta name="description" content="Agenda dos dois lados — cliente marca, prestador confirma. Beleza, saúde, pet, mecânica, autônomos. Cabe todo mundo." />
+  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─────────── NAV ─────────── -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" aria-label="TaMarcado" style="display:inline-flex;align-items:center;gap:10px;">
+        <svg viewBox="0 0 64 70" width="32" height="35" fill="none" aria-hidden="true">
+          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
+          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#recursos">Recursos</a>
+        <a href="#cliente">Para quem marca</a>
+        <a href="#prestador">Para quem atende</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#download" class="nav-cta">Baixar</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─────────── HERO ─────────── -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="tm-cap">TaMarcado · v1 · Maio 2026</div>
+        <h1>
+          Tá marcado,<br />
+          <span class="accent">beleza?</span>
+        </h1>
+        <p class="lead">
+          A agenda dos dois lados. Cliente marca, prestador confirma — beleza,
+          saúde, pet, mecânica, autônomos em geral. Cabe todo mundo num app só.
+        </p>
+        <div class="hero-ctas">
+          <a href="#download" class="btn btn-primary">
+            Sou cliente
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#prestador" class="btn btn-secondary">
+            Sou prestador
+          </a>
+        </div>
+        <div class="hero-meta">
+          <div class="item"><span class="dot"></span> Flutter · Web · iOS · Android</div>
+          <div class="item"><span class="dot"></span> Firebase Auth + Firestore</div>
+          <div class="item"><span class="dot"></span> 100% pt-BR</div>
+        </div>
+      </div>
+
+      <!-- Phone mockup cliente (idêntico ao designer/Mockups.jsx) -->
+      <div class="hero-phone">
+        <div class="hero-phone-bg"></div>
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-statusbar">
+              <span>9:41</span>
+              <div class="phone-notch"></div>
+              <span style="font-size:9px;letter-spacing:1px;">●●●●</span>
+            </div>
+
+            <div class="scr-header">
+              <div class="scr-row">
+                <div>
+                  <div class="scr-greet">Olá, Rafa</div>
+                  <div class="scr-title">Bora marcar?</div>
+                </div>
+                <div class="avatar">RS</div>
+              </div>
+              <div class="scr-search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                <span>O que você quer agendar?</span>
+              </div>
+            </div>
+
+            <div class="scr-chips">
+              <div class="scr-chip on">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+                Beleza
+              </div>
+              <div class="scr-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                Saúde
+              </div>
+              <div class="scr-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.04l-1.79-5.48A2 2 0 0 1 7.27 11h0a2 2 0 0 1 1.73-1z"/></svg>
+                Pet
+              </div>
+              <div class="scr-chip">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                Mecânica
+              </div>
+            </div>
+
+            <div class="scr-bigcard">
+              <div class="scr-bigcard-deco">
+                <svg width="120" height="131" viewBox="0 0 64 70" fill="none">
+                  <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-cream-50)"/>
+                </svg>
+              </div>
+              <div class="scr-bigcard-kicker">PRÓXIMO HORÁRIO</div>
+              <div class="scr-bigcard-title">
+                Mara Hair Studio<br />
+                <span class="when">amanhã, 14:30</span>
+              </div>
+              <div class="scr-bigcard-actions">
+                <div class="scr-pill">Tá marcado ✓</div>
+                <div class="scr-pill outline">Como chegar</div>
+              </div>
+            </div>
+
+            <div class="scr-section-head">
+              <div class="h">Perto de você</div>
+              <div class="a">Ver todos</div>
+            </div>
+
+            <div class="scr-list">
+              <div class="scr-svc">
+                <div class="scr-svc-ic">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+                </div>
+                <div class="scr-svc-info">
+                  <div class="scr-svc-name">Studio Iza</div>
+                  <div class="scr-svc-role">Cabelo · Coloração</div>
+                </div>
+                <div class="scr-svc-meta">
+                  <div class="scr-svc-price">R$ 80</div>
+                  <div class="scr-svc-rating">★ 4,9</div>
+                </div>
+              </div>
+              <div class="scr-svc">
+                <div class="scr-svc-ic" style="background: var(--tm-saffron-300);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/></svg>
+                </div>
+                <div class="scr-svc-info">
+                  <div class="scr-svc-name">Bia Nails</div>
+                  <div class="scr-svc-role">Manicure</div>
+                </div>
+                <div class="scr-svc-meta">
+                  <div class="scr-svc-price">R$ 45</div>
+                  <div class="scr-svc-rating">★ 4,8</div>
+                </div>
+              </div>
+              <div class="scr-svc">
+                <div class="scr-svc-ic" style="background: var(--tm-emerald-100);">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                </div>
+                <div class="scr-svc-info">
+                  <div class="scr-svc-name">Carlos Mec.</div>
+                  <div class="scr-svc-role">Mecânica · Geral</div>
+                </div>
+                <div class="scr-svc-meta">
+                  <div class="scr-svc-price">R$ 120</div>
+                  <div class="scr-svc-rating">★ 4,7</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="scr-tabbar">
+              <div class="scr-tab on">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span>Início</span>
+              </div>
+              <div class="scr-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Agenda</span>
+              </div>
+              <div class="scr-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>Chat</span>
+              </div>
+              <div class="scr-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Eu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── PILARES ─────────── -->
+  <section id="recursos" class="container">
+    <div class="section-head">
+      <div class="tm-cap">Pilares da marca</div>
+      <h2>Linguagem de gente,<br/>não de boleto.</h2>
+      <p>TaMarcado é amigável como a recepção, confiável como um caderno de agenda, e acabado como uma marca de verdade.</p>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <div class="tm-cap">Pilar 01</div>
+        <h3>Amigável</h3>
+        <p>Cores quentes, voz informal, copy direta. "Bora marcar?" no lugar de "agendar serviço".</p>
+      </div>
+      <div class="pillar">
+        <div class="tm-cap">Pilar 02</div>
+        <h3>Confiável</h3>
+        <p>Confirmação clara dos dois lados. Status visíveis: marcado, aguardando, bloqueado, faturado.</p>
+      </div>
+      <div class="pillar">
+        <div class="tm-cap">Pilar 03</div>
+        <h3>Acabado</h3>
+        <p>Sistema de design real, tokens 4px, três famílias tipográficas, fundo creme, verde Esmeralda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── CATEGORIAS ─────────── -->
+  <section class="section-categorias">
+    <div class="container">
+      <div class="section-head">
+        <div class="tm-cap">Para quem é</div>
+        <h2>Cabe todo mundo</h2>
+        <p>Beleza, saúde, pet, mecânica e autônomos em geral. Se você marca horário com cliente, o TaMarcado é seu.</p>
+      </div>
+
+      <div class="cat-grid">
+        <div class="cat">
+          <div class="cat-ic">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></svg>
+          </div>
+          <div class="cat-name">Beleza</div>
+          <div class="cat-desc">Cabelo, unha, barba, estética, maquiagem.</div>
+        </div>
+        <div class="cat">
+          <div class="cat-ic">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <div class="cat-name">Saúde</div>
+          <div class="cat-desc">Massagem, fisio, psicólogo, nutri, dentista.</div>
+        </div>
+        <div class="cat">
+          <div class="cat-ic">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="4" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="20" cy="16" r="2"/><circle cx="4" cy="11" r="2"/><path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.04l-1.79-5.48A2 2 0 0 1 7.27 11h0a2 2 0 0 1 1.73-1z"/></svg>
+          </div>
+          <div class="cat-name">Pet</div>
+          <div class="cat-desc">Banho, tosa, veterinário, adestramento.</div>
+        </div>
+        <div class="cat">
+          <div class="cat-ic">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <div class="cat-name">Mecânica</div>
+          <div class="cat-desc">Geral, elétrica, funilaria, lava-rápido.</div>
+        </div>
+        <div class="cat">
+          <div class="cat-ic">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <div class="cat-name">Autônomos</div>
+          <div class="cat-desc">Quem atende em casa, no cliente, em sala.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── CLIENTE ─────────── -->
+  <section id="cliente" class="container">
+    <div class="split">
+      <div class="split-text">
+        <div class="tm-cap">Para quem marca</div>
+        <h2>Encontra, marca,<br/>esquece da agenda.</h2>
+        <p>Você abre, busca por categoria ou nome, escolhe o horário e pronto. Confirmação imediata e lembrete antes de sair de casa.</p>
+
+        <ul class="feature-list">
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Busca por categoria</strong>
+              <span>Beleza, saúde, pet, mecânica e mais. Filtros por preço, distância e avaliação.</span>
+            </div>
+          </li>
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Marca em 3 toques</strong>
+              <span>Escolhe prestador, vê serviços com prazo e preço, seleciona um slot livre. Tá marcado.</span>
+            </div>
+          </li>
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Próximos agendamentos</strong>
+              <span>Card de destaque do próximo horário. Status, endereço, "como chegar" e botão para remarcar.</span>
+            </div>
+          </li>
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Histórico e avaliações</strong>
+              <span>Tudo que você já marcou fica salvo. Avalie e volte fácil no prestador favorito.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="split-mock">
+        <div class="split-mock-bg cliente"></div>
+        <!-- Phone mockup cliente (versão menor) -->
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-statusbar">
+              <span>9:41</span>
+              <div class="phone-notch"></div>
+              <span style="font-size:9px;letter-spacing:1px;">●●●●</span>
+            </div>
+            <div class="scr-header">
+              <div class="scr-row">
+                <div>
+                  <div class="scr-greet">Olá, Rafa</div>
+                  <div class="scr-title">Bora marcar?</div>
+                </div>
+                <div class="avatar">RS</div>
+              </div>
+              <div class="scr-search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+                <span>O que você quer agendar?</span>
+              </div>
+            </div>
+            <div class="scr-chips">
+              <div class="scr-chip on">Beleza</div>
+              <div class="scr-chip">Saúde</div>
+              <div class="scr-chip">Pet</div>
+              <div class="scr-chip">Mecânica</div>
+            </div>
+            <div class="scr-bigcard">
+              <div class="scr-bigcard-deco">
+                <svg width="120" height="131" viewBox="0 0 64 70" fill="none">
+                  <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-cream-50)"/>
+                </svg>
+              </div>
+              <div class="scr-bigcard-kicker">PRÓXIMO HORÁRIO</div>
+              <div class="scr-bigcard-title">
+                Mara Hair Studio<br/>
+                <span class="when">amanhã, 14:30</span>
+              </div>
+              <div class="scr-bigcard-actions">
+                <div class="scr-pill">Tá marcado ✓</div>
+                <div class="scr-pill outline">Como chegar</div>
+              </div>
+            </div>
+            <div class="scr-section-head">
+              <div class="h">Perto de você</div>
+              <div class="a">Ver todos</div>
+            </div>
+            <div class="scr-list">
+              <div class="scr-svc">
+                <div class="scr-svc-ic"></div>
+                <div class="scr-svc-info">
+                  <div class="scr-svc-name">Studio Iza</div>
+                  <div class="scr-svc-role">Cabelo · Coloração</div>
+                </div>
+                <div class="scr-svc-meta">
+                  <div class="scr-svc-price">R$ 80</div>
+                  <div class="scr-svc-rating">★ 4,9</div>
+                </div>
+              </div>
+              <div class="scr-svc">
+                <div class="scr-svc-ic" style="background: var(--tm-saffron-300);"></div>
+                <div class="scr-svc-info">
+                  <div class="scr-svc-name">Bia Nails</div>
+                  <div class="scr-svc-role">Manicure</div>
+                </div>
+                <div class="scr-svc-meta">
+                  <div class="scr-svc-price">R$ 45</div>
+                  <div class="scr-svc-rating">★ 4,8</div>
+                </div>
+              </div>
+            </div>
+            <div class="scr-tabbar">
+              <div class="scr-tab on">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                <span>Início</span>
+              </div>
+              <div class="scr-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span>Agenda</span>
+              </div>
+              <div class="scr-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>Chat</span>
+              </div>
+              <div class="scr-tab">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Eu</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── PRESTADOR ─────────── -->
+  <section id="prestador" class="container tight">
+    <div class="split reverse">
+      <div class="split-text">
+        <div class="tm-cap">Para quem atende</div>
+        <h2>Sua agenda,<br/>sua régua.</h2>
+        <p>Você define horário de trabalho, intervalos e duração de cada serviço. O cliente só vê o que está livre — e você só recebe pedido nos slots que abriu.</p>
+
+        <ul class="feature-list">
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Agenda do dia e da semana</strong>
+              <span>Linha do tempo com cliente, serviço e status. Marcado, aguardando, bloqueado — tudo na cor certa.</span>
+            </div>
+          </li>
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Catálogo de serviços</strong>
+              <span>Nome, descrição, preço, duração e fotos. O cliente vê exatamente o que vai contratar.</span>
+            </div>
+          </li>
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Faturado, marcados, livres</strong>
+              <span>Três números no topo do dia: quantos slots vendidos, quanto faturou, quanto ainda dá pra encaixar.</span>
+            </div>
+          </li>
+          <li>
+            <span class="feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>
+            <div>
+              <strong>Bloqueio fácil</strong>
+              <span>Almoço, médico, dia off — bloqueia em um toque, ninguém marca em cima.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="split-mock">
+        <div class="split-mock-bg prestador"></div>
+        <!-- Phone mockup prestador -->
+        <div class="phone">
+          <div class="phone-screen">
+            <div class="phone-statusbar">
+              <span>9:41</span>
+              <div class="phone-notch"></div>
+              <span style="font-size:9px;letter-spacing:1px;">●●●●</span>
+            </div>
+            <div class="scr-header">
+              <div class="scr-row">
+                <div>
+                  <div class="scr-day">QUI · 8 MAI</div>
+                  <div class="scr-title" style="margin-top:2px;">Sua agenda</div>
+                </div>
+                <div class="scr-iconbtn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                </div>
+              </div>
+
+              <div class="scr-daystrip">
+                <div class="scr-daycell"><div class="dn">SEG</div><div class="dd">5</div></div>
+                <div class="scr-daycell"><div class="dn">TER</div><div class="dd">6</div></div>
+                <div class="scr-daycell"><div class="dn">QUA</div><div class="dd">7</div></div>
+                <div class="scr-daycell on"><div class="dn">QUI</div><div class="dd">8</div></div>
+                <div class="scr-daycell"><div class="dn">SEX</div><div class="dd">9</div></div>
+                <div class="scr-daycell"><div class="dn">SÁB</div><div class="dd">10</div></div>
+              </div>
+
+              <div class="scr-stats">
+                <div>
+                  <div class="l">MARCADOS</div>
+                  <div class="v">7</div>
+                </div>
+                <div>
+                  <div class="l">FATURADO</div>
+                  <div class="v">R$ 480</div>
+                </div>
+                <div>
+                  <div class="l">LIVRES</div>
+                  <div class="v">3</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="scr-timeline">
+              <div class="scr-tl-row">
+                <div class="scr-tl-time">09:00</div>
+                <div class="scr-tl-bar confirmed"></div>
+                <div class="scr-tl-info">
+                  <div class="scr-tl-who">Júlia M.</div>
+                  <div class="scr-tl-svc">Manicure · 1h</div>
+                </div>
+                <div class="scr-tl-tag">OK</div>
+              </div>
+              <div class="scr-tl-row">
+                <div class="scr-tl-time">10:30</div>
+                <div class="scr-tl-bar pending"></div>
+                <div class="scr-tl-info">
+                  <div class="scr-tl-who">Pedro Castro</div>
+                  <div class="scr-tl-svc">Corte + barba</div>
+                </div>
+                <div class="scr-tl-tag">AGUARDANDO</div>
+              </div>
+              <div class="scr-tl-row">
+                <div class="scr-tl-time">12:00</div>
+                <div class="scr-tl-bar blocked"></div>
+                <div class="scr-tl-info">
+                  <div class="scr-tl-who">— Almoço —</div>
+                  <div class="scr-tl-svc">Bloqueio · 1h</div>
+                </div>
+                <div class="scr-tl-tag">BLOQUEADO</div>
+              </div>
+              <div class="scr-tl-row">
+                <div class="scr-tl-time">14:30</div>
+                <div class="scr-tl-bar confirmed"></div>
+                <div class="scr-tl-info">
+                  <div class="scr-tl-who">Rafa S.</div>
+                  <div class="scr-tl-svc">Cabelo + escova</div>
+                </div>
+                <div class="scr-tl-tag">OK</div>
+              </div>
+            </div>
+
+            <div class="scr-cta">
+              <div class="scr-cta-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Abrir novo horário
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── STACK ─────────── -->
+  <section id="tecnologia" class="section-stack">
+    <div class="container">
+      <div class="section-head">
+        <div class="tm-cap">Tecnologia</div>
+        <h2>Uma base. Três telas.</h2>
+        <p>Flutter para web, Android e iOS — Firebase para autenticação, dados e arquivos. Stack enxuta, deploy direto, locale primário pt-BR.</p>
+      </div>
+
+      <div class="stack-grid">
+        <div class="stack-card">
+          <div class="ic">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="14.5 2 7 14 12 14 9.5 22 17 10 12 10 14.5 2"/></svg>
+          </div>
+          <h3>Flutter</h3>
+          <p>Uma única base de código para três plataformas. Sem fork, sem rebuild paralelo.</p>
+          <ul>
+            <li>Web (build estático)</li>
+            <li>Android (apk · play store)</li>
+            <li>iOS (ipa · app store)</li>
+            <li>Dart 3.11+</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <div class="ic">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 0 18 0 9 9 0 0 0-18 0Z"/><path d="M12 3v18"/><path d="M3 12h18"/></svg>
+          </div>
+          <h3>Firebase</h3>
+          <p>Backend completo sem servidor próprio. Tudo na infra do Google.</p>
+          <ul>
+            <li>Auth (Email/Senha)</li>
+            <li>Firestore (dados em tempo real)</li>
+            <li>Storage (fotos de serviço)</li>
+            <li>Rules + indexes versionados</li>
+          </ul>
+        </div>
+
+        <div class="stack-card">
+          <div class="ic">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Modelo</h3>
+          <p>Quatro coleções principais, papel de usuário (cliente/prestador) embarcado no auth state.</p>
+          <ul>
+            <li>users / providers</li>
+            <li>providers/{uid}/services</li>
+            <li>appointments (status, prazo, fotos)</li>
+            <li>go_router com guards de papel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── IDENTIDADE ─────────── -->
+  <section class="container">
+    <div class="section-head">
+      <div class="tm-cap">Identidade Visual · v1 · Maio 2026</div>
+      <h2>Sistema de design real,<br/>não só uma cara.</h2>
+      <p>Tokens 4-px, três famílias tipográficas, paleta limitada e logotipo PinCheck — pin de localização com check, "tá marcado, presente ali".</p>
+    </div>
+
+    <div class="id-grid">
+      <div class="id-card">
+        <h3>Paleta</h3>
+        <div class="swatches">
+          <div class="swatch emerald">
+            <div class="name">Emerald 700</div>
+            <div class="hex">oklch(45% .10 164)</div>
+          </div>
+          <div class="swatch cream">
+            <div class="name">Cream 50</div>
+            <div class="hex">#FBF7EE</div>
+          </div>
+          <div class="swatch ink">
+            <div class="name">Ink 950</div>
+            <div class="hex">#0F1410</div>
+          </div>
+          <div class="swatch saffron">
+            <div class="name">Saffron 500</div>
+            <div class="hex">oklch(74% .15 70)</div>
+          </div>
+        </div>
+        <p style="margin-top:var(--tm-s-4); font-size:13px; color:var(--tm-ink-500); line-height:1.5;">
+          Emerald é a marca. Cream é a superfície. Ink é o texto. Saffron acende ponto crítico — botão de "marca agora", destaque, badge.
+        </p>
+      </div>
+
+      <div class="id-card">
+        <h3>Tipografia</h3>
+        <div class="font-row">
+          <div class="label">Display · Bricolage Grotesque</div>
+          <div class="sample-display">Tá marcado, beleza?</div>
+        </div>
+        <div class="font-row">
+          <div class="label">Texto · Manrope</div>
+          <div class="sample-text">Cliente marca, prestador confirma.</div>
+        </div>
+        <div class="font-row">
+          <div class="label">Mono · JetBrains Mono</div>
+          <div class="sample-mono">14:30 · R$ 80,00</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── ROADMAP ─────────── -->
+  <section class="section-roadmap">
+    <div class="container">
+      <div class="section-head">
+        <div class="tm-cap">O que vem depois do v1</div>
+        <h2>Roadmap</h2>
+        <p>v1 entrega busca, marcação, agenda do prestador e papel duplo. Depois vem o que torna o app gostoso de usar todo dia.</p>
+      </div>
+
+      <div class="roadmap">
+        <div class="road-card">
+          <div class="road-num">01</div>
+          <div>
+            <h4>Notificações push</h4>
+            <p>FCM. Confirmar / cancelar pelo push, lembretes 1h antes do horário.</p>
+          </div>
+        </div>
+        <div class="road-card">
+          <div class="road-num">02</div>
+          <div>
+            <h4>Pagamento</h4>
+            <p>Pix e cartão pelo Stripe. Sinal antecipado opcional, repasse no fim do dia.</p>
+          </div>
+        </div>
+        <div class="road-card">
+          <div class="road-num">03</div>
+          <div>
+            <h4>Mensagens</h4>
+            <p>Chat 1:1 cliente ↔ prestador. "Vou atrasar 10 min" sem sair do app.</p>
+          </div>
+        </div>
+        <div class="road-card">
+          <div class="road-num">04</div>
+          <div>
+            <h4>Mapa real</h4>
+            <p>Google Maps no card "Como chegar". Endereço com pin certo, sem confusão.</p>
+          </div>
+        </div>
+        <div class="road-card">
+          <div class="road-num">05</div>
+          <div>
+            <h4>Avaliações</h4>
+            <p>Coleção <span class="tm-mono" style="font-size:12px;">reviews/{aid}</span> após o atendimento. Nota + comentário curto.</p>
+          </div>
+        </div>
+        <div class="road-card">
+          <div class="road-num">06</div>
+          <div>
+            <h4>App icon e splash</h4>
+            <p>Geração via flutter_launcher_icons usando o PinCheck. iOS, Android adaptive e monocromático.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── CTA FINAL ─────────── -->
+  <section id="download" class="container section-cta">
+    <div class="cta-card">
+      <div class="cta-deco">
+        <svg width="280" height="306" viewBox="0 0 64 70" fill="none">
+          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-cream-50)"/>
+        </svg>
+      </div>
+      <h2>
+        Tá marcado,<br/>
+        <span class="accent">beleza?</span>
+      </h2>
+      <p>Em breve nas lojas. Enquanto isso, dá pra rodar o app web direto do projeto Flutter.</p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          App Store
+        </a>
+        <a href="#" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5V3.5c0-.6.3-1.1.8-1.4l13.4 9.4c.3.2.3.7 0 .9L3.8 21.9c-.5-.3-.8-.8-.8-1.4zm14.4-7.4 2.6 1.8c.5.4.5 1.1 0 1.5l-2.6 1.8-2.9-2.6 2.9-2.5z"/></svg>
+          Google Play
+        </a>
+        <a href="#" class="btn btn-secondary">
+          Rodar no navegador
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── FOOTER ─────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#" style="display:inline-flex;align-items:center;gap:10px;">
+          <svg viewBox="0 0 64 70" width="28" height="31" fill="none" aria-hidden="true">
+            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
+            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+        </a>
+        <div class="footer-tag">
+          Agenda dos dois lados — cliente marca, prestador confirma. Beleza, saúde, pet, mecânica, autônomos. Cabe todo mundo.
+        </div>
+      </div>
+
+      <div style="text-align:right;">
+        <div class="footer-meta">© 2026 · TaMarcado · v1</div>
+        <div class="footer-signoff">Tá marcado, beleza? ✓</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
