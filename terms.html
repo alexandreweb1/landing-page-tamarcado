@@ -1,26 +1,37 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#FBF7EE" />
   <title>Termos de uso — TaMarcado</title>
   <meta name="description" content="Termos de uso do TaMarcado." />
-  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" aria-label="TaMarcado" style="display:inline-flex;align-items:center;gap:10px;">
         <svg viewBox="0 0 64 70" width="32" height="35" fill="none" aria-hidden="true">
-          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
-          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z"
+            fill="var(--tm-emerald-700)" />
+          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
-        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span
+            class="marcado">Marcado</span></span>
       </a>
-      <div class="nav-links">
+
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
         <a href="index.html#recursos">Recursos</a>
         <a href="index.html#cliente">Para quem marca</a>
         <a href="index.html#prestador">Para quem atende</a>
@@ -35,10 +46,12 @@
     <h1>Termos de uso</h1>
     <p class="updated">Última atualização: 9 de maio de 2026</p>
 
-    <p>Estes Termos regulam o uso do app TaMarcado por clientes e prestadores. Ao criar uma conta, você concorda com estas regras.</p>
+    <p>Estes Termos regulam o uso do app TaMarcado por clientes e prestadores. Ao criar uma conta, você concorda com
+      estas regras.</p>
 
     <h2>1. O que o TaMarcado faz</h2>
-    <p>O TaMarcado é uma plataforma que conecta clientes a prestadores de serviços autônomos para fins de agendamento. Não somos responsáveis pela execução do serviço em si — quem presta e quem contrata se relacionam diretamente.</p>
+    <p>O TaMarcado é uma plataforma que conecta clientes a prestadores de serviços autônomos para fins de agendamento.
+      Não somos responsáveis pela execução do serviço em si — quem presta e quem contrata se relacionam diretamente.</p>
 
     <h2>2. Cadastro</h2>
     <ul>
@@ -60,8 +73,10 @@
     <h2>4. Agendamentos</h2>
     <ul>
       <li>O cliente solicita um horário; o prestador confirma, recusa ou cancela.</li>
-      <li>Cancelamentos e remarcações seguem o que cliente e prestador combinarem entre si. O TaMarcado não cobra taxas de cancelamento (até esta versão).</li>
-      <li>Conteúdo que cliente e prestador trocam (recados, fotos, prazos) é responsabilidade deles. Não revisamos conteúdo previamente.</li>
+      <li>Cancelamentos e remarcações seguem o que cliente e prestador combinarem entre si. O TaMarcado não cobra taxas
+        de cancelamento (até esta versão).</li>
+      <li>Conteúdo que cliente e prestador trocam (recados, fotos, prazos) é responsabilidade deles. Não revisamos
+        conteúdo previamente.</li>
     </ul>
 
     <h2>5. Conteúdo dos prestadores</h2>
@@ -83,16 +98,21 @@
     <p>Nas hipóteses em que houver responsabilidade, ela se limita ao previsto no Código de Defesa do Consumidor.</p>
 
     <h2>7. Propriedade intelectual</h2>
-    <p>A marca TaMarcado, o logotipo, a identidade visual e o código-fonte do app são protegidos por lei. Você pode usar o app conforme estes Termos, mas não pode copiar, reproduzir ou redistribuir o app ou seus elementos.</p>
+    <p>A marca TaMarcado, o logotipo, a identidade visual e o código-fonte do app são protegidos por lei. Você pode usar
+      o app conforme estes Termos, mas não pode copiar, reproduzir ou redistribuir o app ou seus elementos.</p>
 
     <h2>8. Encerramento da conta</h2>
-    <p>Você pode encerrar a sua conta a qualquer momento, pelo menu Perfil → <em>Excluir minha conta</em> dentro do app, ou pelo <a href="contato.html">formulário de contato</a>. Seus dados serão tratados conforme a <a href="privacy.html">Política de Privacidade</a>.</p>
+    <p>Você pode encerrar a sua conta a qualquer momento, pelo menu Perfil → <em>Excluir minha conta</em> dentro do app,
+      ou pelo <a href="contato.html">formulário de contato</a>. Seus dados serão tratados conforme a <a
+        href="privacy.html">Política de Privacidade</a>.</p>
 
     <h2>9. Mudanças nestes Termos</h2>
-    <p>Podemos alterar estes Termos. Mudanças relevantes serão avisadas com 15 dias de antecedência. Se você continuar usando o app após o aviso, considera-se que aceitou a nova versão.</p>
+    <p>Podemos alterar estes Termos. Mudanças relevantes serão avisadas com 15 dias de antecedência. Se você continuar
+      usando o app após o aviso, considera-se que aceitou a nova versão.</p>
 
     <h2>10. Lei aplicável</h2>
-    <p>Aplicam-se as leis da República Federativa do Brasil. Foro da comarca de Cabedelo/PB, salvo o foro do consumidor previsto no Código de Defesa do Consumidor.</p>
+    <p>Aplicam-se as leis da República Federativa do Brasil. Foro da comarca de Cabedelo/PB, salvo o foro do consumidor
+      previsto no Código de Defesa do Consumidor.</p>
 
     <hr />
 
@@ -104,10 +124,13 @@
       <div>
         <a href="index.html" style="display:inline-flex;align-items:center;gap:10px;">
           <svg viewBox="0 0 64 70" width="28" height="31" fill="none" aria-hidden="true">
-            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
-            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z"
+              fill="var(--tm-emerald-700)" />
+            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
-          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span
+              class="marcado">Marcado</span></span>
         </a>
         <div class="footer-links">
           <a href="privacy.html">Política de privacidade</a>
@@ -122,5 +145,9 @@
     </div>
   </footer>
 
+  <!-- Este script controla o funcionamento do menu mobile da navbar em celulares e tablets. -->
+  <script src="menu-mobile.js"></script>
+
 </body>
+
 </html>

@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#FBF7EE" />
   <title>Política de privacidade — TaMarcado</title>
   <meta name="description" content="Política de privacidade do TaMarcado, conforme a LGPD." />
-  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- ─────────── NAV ─────────── -->
@@ -16,13 +19,20 @@
     <div class="nav-inner">
       <a href="index.html" aria-label="TaMarcado" style="display:inline-flex;align-items:center;gap:10px;">
         <svg viewBox="0 0 64 70" width="32" height="35" fill="none" aria-hidden="true">
-          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
-          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z"
+            fill="var(--tm-emerald-700)" />
+          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
-        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span
+            class="marcado">Marcado</span></span>
       </a>
 
-      <div class="nav-links">
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
         <a href="index.html#recursos">Recursos</a>
         <a href="index.html#cliente">Para quem marca</a>
         <a href="index.html#prestador">Para quem atende</a>
@@ -37,14 +47,18 @@
     <h1>Política de privacidade</h1>
     <p class="updated">Última atualização: 9 de maio de 2026</p>
 
-    <p>O TaMarcado é um aplicativo de agendamento que conecta clientes a prestadores de serviços (beleza, saúde, pet, mecânica, autônomos em geral). Esta política descreve como coletamos, usamos, compartilhamos e protegemos os seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).</p>
+    <p>O TaMarcado é um aplicativo de agendamento que conecta clientes a prestadores de serviços (beleza, saúde, pet,
+      mecânica, autônomos em geral). Esta política descreve como coletamos, usamos, compartilhamos e protegemos os seus
+      dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 – LGPD).</p>
 
     <hr />
 
     <h2>1. Quem somos</h2>
-    <p><strong>Controlador:</strong> Logic Dev — sediada em Cabedelo, Paraíba, Brasil.<br/>
-       <strong>Encarregado de dados (DPO):</strong> <a href="mailto:privacidade@tamarcado.app">privacidade@tamarcado.app</a><br/>
-       <strong>Contato geral:</strong> <a href="mailto:contato@tamarcado.app">contato@tamarcado.app</a></p>
+    <p><strong>Controlador:</strong> Logic Dev — sediada em Cabedelo, Paraíba, Brasil.<br />
+      <strong>Encarregado de dados (DPO):</strong> <a
+        href="mailto:privacidade@tamarcado.app">privacidade@tamarcado.app</a><br />
+      <strong>Contato geral:</strong> <a href="mailto:contato@tamarcado.app">contato@tamarcado.app</a>
+    </p>
 
     <h2>2. Quais dados coletamos</h2>
     <p>Coletamos apenas os dados estritamente necessários para o funcionamento do app:</p>
@@ -82,7 +96,8 @@
       <li>Diagnósticos de falhas (Crashlytics, quando ativado)</li>
     </ul>
 
-    <p><strong>Não coletamos:</strong> localização precisa em segundo plano, contatos do dispositivo, histórico de navegação fora do app, dados de pagamento (até esta versão não há módulo de pagamento integrado).</p>
+    <p><strong>Não coletamos:</strong> localização precisa em segundo plano, contatos do dispositivo, histórico de
+      navegação fora do app, dados de pagamento (até esta versão não há módulo de pagamento integrado).</p>
 
     <h2>3. Como usamos os dados</h2>
     <p>Usamos seus dados exclusivamente para:</p>
@@ -94,12 +109,17 @@
       <li>Garantir segurança da conta e prevenção a fraudes</li>
       <li>Melhorar o app a partir de diagnósticos agregados</li>
     </ul>
-    <p><strong>Base legal (LGPD art. 7):</strong> execução de contrato, legítimo interesse e consentimento (foto de perfil opcional).</p>
+    <p><strong>Base legal (LGPD art. 7):</strong> execução de contrato, legítimo interesse e consentimento (foto de
+      perfil opcional).</p>
 
     <h2>4. Com quem compartilhamos</h2>
     <ul>
-      <li><strong>Outros usuários do app:</strong> o nome e a foto do prestador (e seu catálogo) são públicos para qualquer cliente; o nome do cliente, recados e telefone (se informado) são compartilhados com o prestador do agendamento que ele criou. Nada além disso.</li>
-      <li><strong>Operadores (LGPD art. 5, VII):</strong> Google LLC / Firebase, na função de operador de armazenamento, autenticação e armazenamento de arquivos. Os dados ficam em servidores do Google na região São Paulo (<code>southamerica-east1</code>) sempre que possível.</li>
+      <li><strong>Outros usuários do app:</strong> o nome e a foto do prestador (e seu catálogo) são públicos para
+        qualquer cliente; o nome do cliente, recados e telefone (se informado) são compartilhados com o prestador do
+        agendamento que ele criou. Nada além disso.</li>
+      <li><strong>Operadores (LGPD art. 5, VII):</strong> Google LLC / Firebase, na função de operador de armazenamento,
+        autenticação e armazenamento de arquivos. Os dados ficam em servidores do Google na região São Paulo
+        (<code>southamerica-east1</code>) sempre que possível.</li>
       <li><strong>Autoridades públicas:</strong> somente mediante ordem judicial ou requisição legal.</li>
     </ul>
     <p>Não vendemos dados pessoais. Não usamos dados pessoais para publicidade direcionada.</p>
@@ -107,8 +127,10 @@
     <h2>5. Por quanto tempo guardamos</h2>
     <ul>
       <li><strong>Conta ativa:</strong> mantemos seus dados enquanto sua conta estiver ativa.</li>
-      <li><strong>Conta excluída:</strong> dados pessoais são anonimizados ou excluídos em até 30 dias após o pedido. Mantemos o mínimo necessário (registros financeiros / fiscais, se aplicável) pelo prazo legal.</li>
-      <li><strong>Agendamentos concluídos:</strong> ficam visíveis no histórico do cliente e do prestador. Você pode pedir a remoção a qualquer momento.</li>
+      <li><strong>Conta excluída:</strong> dados pessoais são anonimizados ou excluídos em até 30 dias após o pedido.
+        Mantemos o mínimo necessário (registros financeiros / fiscais, se aplicável) pelo prazo legal.</li>
+      <li><strong>Agendamentos concluídos:</strong> ficam visíveis no histórico do cliente e do prestador. Você pode
+        pedir a remoção a qualquer momento.</li>
     </ul>
 
     <h2>6. Seus direitos (LGPD art. 18)</h2>
@@ -117,7 +139,8 @@
       <li><strong>Confirmar</strong> se tratamos seus dados</li>
       <li><strong>Acessar</strong> os dados que temos sobre você</li>
       <li><strong>Corrigir</strong> dados incompletos, inexatos ou desatualizados</li>
-      <li><strong>Solicitar anonimização, bloqueio ou eliminação</strong> de dados desnecessários ou tratados em desconformidade</li>
+      <li><strong>Solicitar anonimização, bloqueio ou eliminação</strong> de dados desnecessários ou tratados em
+        desconformidade</li>
       <li><strong>Solicitar portabilidade</strong> dos dados a outro fornecedor</li>
       <li><strong>Eliminar</strong> dados pessoais tratados com seu consentimento</li>
       <li><strong>Saber com quem compartilhamos</strong> seus dados</li>
@@ -125,8 +148,11 @@
     </ul>
     <p>Você pode exercer esses direitos de duas formas:</p>
     <ul>
-      <li><strong>Exclusão de conta direto no app:</strong> Perfil → <em>Excluir minha conta</em>. A exclusão é processada na hora.</li>
-      <li><strong>Demais solicitações:</strong> pelo formulário em <a href="contato.html">tamarcado.app/contato</a> (selecione o motivo "Solicitação de exclusão de dados (LGPD)" ou "Outros direitos do titular") ou pelo e-mail <a href="mailto:privacidade@tamarcado.app">privacidade@tamarcado.app</a>.</li>
+      <li><strong>Exclusão de conta direto no app:</strong> Perfil → <em>Excluir minha conta</em>. A exclusão é
+        processada na hora.</li>
+      <li><strong>Demais solicitações:</strong> pelo formulário em <a href="contato.html">tamarcado.app/contato</a>
+        (selecione o motivo "Solicitação de exclusão de dados (LGPD)" ou "Outros direitos do titular") ou pelo e-mail <a
+          href="mailto:privacidade@tamarcado.app">privacidade@tamarcado.app</a>.</li>
     </ul>
     <p>Respondemos em até 15 dias.</p>
 
@@ -135,26 +161,36 @@
     <ul>
       <li>Tráfego sempre em HTTPS/TLS</li>
       <li>Senhas armazenadas pelo Firebase Authentication (hash + salt; nunca em texto puro)</li>
-      <li>Regras de segurança no Firestore e no Storage que garantem que cada usuário só lê/escreve o que tem direito</li>
+      <li>Regras de segurança no Firestore e no Storage que garantem que cada usuário só lê/escreve o que tem direito
+      </li>
       <li>Backups regulares pelo provedor de infraestrutura</li>
     </ul>
-    <p>Mesmo com nossos cuidados, nenhum sistema é 100% à prova de incidentes. Em caso de violação de dados que envolva risco relevante a você, comunicaremos a ANPD e os titulares afetados, conforme o art. 48 da LGPD.</p>
+    <p>Mesmo com nossos cuidados, nenhum sistema é 100% à prova de incidentes. Em caso de violação de dados que envolva
+      risco relevante a você, comunicaremos a ANPD e os titulares afetados, conforme o art. 48 da LGPD.</p>
 
     <h2>8. Crianças e adolescentes</h2>
-    <p>O TaMarcado é destinado a maiores de 18 anos. Não coletamos intencionalmente dados de menores. Se identificarmos que houve cadastro de menor sem o devido consentimento dos responsáveis, excluiremos os dados.</p>
+    <p>O TaMarcado é destinado a maiores de 18 anos. Não coletamos intencionalmente dados de menores. Se identificarmos
+      que houve cadastro de menor sem o devido consentimento dos responsáveis, excluiremos os dados.</p>
 
     <h2>9. Cookies (versão web)</h2>
-    <p>Na versão web do TaMarcado usamos apenas cookies/armazenamento local <strong>necessários</strong> para manter você autenticado e preservar suas preferências básicas (idioma, último filtro de busca). Não usamos cookies publicitários.</p>
+    <p>Na versão web do TaMarcado usamos apenas cookies/armazenamento local <strong>necessários</strong> para manter
+      você autenticado e preservar suas preferências básicas (idioma, último filtro de busca). Não usamos cookies
+      publicitários.</p>
 
     <h2>10. Mudanças nesta política</h2>
-    <p>Podemos atualizar esta política. A versão vigente sempre estará disponível em <a href="https://tamarcado.app/privacy">https://tamarcado.app/privacy</a> e dentro do app, no menu Perfil → Política de privacidade. Mudanças relevantes serão comunicadas por e-mail e/ou no app, com no mínimo 15 dias de antecedência.</p>
+    <p>Podemos atualizar esta política. A versão vigente sempre estará disponível em <a
+        href="https://tamarcado.app/privacy">https://tamarcado.app/privacy</a> e dentro do app, no menu Perfil →
+      Política de privacidade. Mudanças relevantes serão comunicadas por e-mail e/ou no app, com no mínimo 15 dias de
+      antecedência.</p>
 
     <h2>11. Lei aplicável e foro</h2>
-    <p>Esta política é regida pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da comarca de Cabedelo/PB, salvo o foro do consumidor previsto no Código de Defesa do Consumidor.</p>
+    <p>Esta política é regida pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da
+      comarca de Cabedelo/PB, salvo o foro do consumidor previsto no Código de Defesa do Consumidor.</p>
 
     <hr />
 
-    <p>Dúvidas? Fale com a gente em <a href="mailto:contato@tamarcado.app">contato@tamarcado.app</a> ou pelo <a href="contato.html">formulário de contato</a>.</p>
+    <p>Dúvidas? Fale com a gente em <a href="mailto:contato@tamarcado.app">contato@tamarcado.app</a> ou pelo <a
+        href="contato.html">formulário de contato</a>.</p>
   </main>
 
   <!-- ─────────── FOOTER ─────────── -->
@@ -163,10 +199,13 @@
       <div>
         <a href="index.html" style="display:inline-flex;align-items:center;gap:10px;">
           <svg viewBox="0 0 64 70" width="28" height="31" fill="none" aria-hidden="true">
-            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
-            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z"
+              fill="var(--tm-emerald-700)" />
+            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
-          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span
+              class="marcado">Marcado</span></span>
         </a>
         <div class="footer-links">
           <a href="privacy.html">Política de privacidade</a>
@@ -181,5 +220,9 @@
     </div>
   </footer>
 
+  <!-- Este script controla o funcionamento do menu mobile da navbar em celulares e tablets. -->
+  <script src="menu-mobile.js"></script>
+
 </body>
+
 </html>

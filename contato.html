@@ -1,26 +1,37 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="theme-color" content="#FBF7EE" />
   <title>Contato — TaMarcado</title>
-  <meta name="description" content="Fale com a equipe TaMarcado. Dúvidas, suporte, parcerias e solicitações de exclusão de dados (LGPD)." />
-  <link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+  <meta name="description"
+    content="Fale com a equipe TaMarcado. Dúvidas, suporte, parcerias e solicitações de exclusão de dados (LGPD)." />
+  <link rel="icon"
+    href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 70'><path d='M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z' fill='%23347758'/><path d='M21 28.5 L29 36 L43 22' stroke='%23FBF7EE' stroke-width='5' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <nav class="nav">
     <div class="nav-inner">
       <a href="index.html" aria-label="TaMarcado" style="display:inline-flex;align-items:center;gap:10px;">
         <svg viewBox="0 0 64 70" width="32" height="35" fill="none" aria-hidden="true">
-          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
-          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z"
+            fill="var(--tm-emerald-700)" />
+          <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round"
+            stroke-linejoin="round" />
         </svg>
-        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+        <span class="tm-wordmark" style="font-size:22px;"><span class="ta">Ta</span><span
+            class="marcado">Marcado</span></span>
       </a>
-      <div class="nav-links">
+      <button class="menu-toggle" id="menuToggle">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
         <a href="index.html#recursos">Recursos</a>
         <a href="index.html#cliente">Para quem marca</a>
         <a href="index.html#prestador">Para quem atende</a>
@@ -33,9 +44,10 @@
     <a href="index.html" class="back-link" style="color:var(--tm-emerald-700); font-weight:600;">← Voltar</a>
 
     <div class="tm-cap" style="margin-top:var(--tm-s-3);">Fale com a gente</div>
-    <h1>Tá marcado, vamos<br/><span style="color:var(--tm-emerald-700);">conversar?</span></h1>
+    <h1>Tá marcado, vamos<br /><span style="color:var(--tm-emerald-700);">conversar?</span></h1>
     <p class="lead">
-      Dúvida, suporte, parceria ou pedido de exclusão de dados — é por aqui mesmo. Respondemos em até <strong>2 dias úteis</strong>. Para pedidos LGPD, em <strong>até 15 dias</strong>.
+      Dúvida, suporte, parceria ou pedido de exclusão de dados — é por aqui mesmo. Respondemos em até <strong>2 dias
+        úteis</strong>. Para pedidos LGPD, em <strong>até 15 dias</strong>.
     </p>
 
     <div class="contact-grid">
@@ -72,7 +84,8 @@
         <div class="form-row" id="lgpdNote" hidden>
           <div class="lgpd-banner">
             <strong>Sobre exclusão de dados (LGPD art. 18, VI):</strong>
-            você também pode excluir sua conta direto no app, em <em>Perfil → Excluir minha conta</em>. Para outras solicitações (acesso, correção, portabilidade, anonimização), descreva no campo abaixo o que precisa.
+            você também pode excluir sua conta direto no app, em <em>Perfil → Excluir minha conta</em>. Para outras
+            solicitações (acesso, correção, portabilidade, anonimização), descreva no campo abaixo o que precisa.
           </div>
         </div>
 
@@ -84,18 +97,23 @@
 
         <label class="consent">
           <input type="checkbox" id="consent" required />
-          <span>Concordo que meus dados de contato sejam usados para responder esta solicitação, conforme a <a href="privacy.html">Política de Privacidade</a>.</span>
+          <span>Concordo que meus dados de contato sejam usados para responder esta solicitação, conforme a <a
+              href="privacy.html">Política de Privacidade</a>.</span>
         </label>
 
         <div class="form-actions">
           <button type="submit" class="btn btn-primary" id="submitBtn">
             Enviar mensagem
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
           </button>
         </div>
 
         <p class="form-hint">
-          Ao enviar, abrimos seu cliente de e-mail com tudo já preenchido — você só precisa apertar "enviar". Se preferir, escreva direto pra
+          Ao enviar, abrimos seu cliente de e-mail com tudo já preenchido — você só precisa apertar "enviar". Se
+          preferir, escreva direto pra
           <a href="mailto:contato@tamarcado.app">contato@tamarcado.app</a>.
         </p>
 
@@ -118,14 +136,16 @@
         </div>
         <div class="channel">
           <div class="channel-label">Endereço</div>
-          <p>Logic Dev<br/>Cabedelo, Paraíba — Brasil</p>
+          <p>Logic Dev<br />Cabedelo, Paraíba — Brasil</p>
         </div>
 
         <hr />
 
         <h3>Excluir minha conta</h3>
-        <p>O jeito mais rápido: dentro do app em <strong>Perfil → Excluir minha conta</strong>. Os dados são apagados na hora, conforme descrito na <a href="privacy.html">Política de Privacidade</a>.</p>
-        <p>Se não consegue acessar o app, use o formulário ao lado com o motivo <em>"Solicitação de exclusão de dados (LGPD)"</em>.</p>
+        <p>O jeito mais rápido: dentro do app em <strong>Perfil → Excluir minha conta</strong>. Os dados são apagados na
+          hora, conforme descrito na <a href="privacy.html">Política de Privacidade</a>.</p>
+        <p>Se não consegue acessar o app, use o formulário ao lado com o motivo <em>"Solicitação de exclusão de dados
+            (LGPD)"</em>.</p>
       </aside>
     </div>
   </main>
@@ -135,10 +155,13 @@
       <div>
         <a href="index.html" style="display:inline-flex;align-items:center;gap:10px;">
           <svg viewBox="0 0 64 70" width="28" height="31" fill="none" aria-hidden="true">
-            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z" fill="var(--tm-emerald-700)"/>
-            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M32 4 C18.75 4 8 14.75 8 28 C8 38 14.5 47 32 64 C49.5 47 56 38 56 28 C56 14.75 45.25 4 32 4 Z"
+              fill="var(--tm-emerald-700)" />
+            <path d="M21 28.5 L29 36 L43 22" stroke="var(--tm-cream-50)" stroke-width="5" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
-          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span class="marcado">Marcado</span></span>
+          <span class="tm-wordmark" style="font-size:20px;"><span class="ta">Ta</span><span
+              class="marcado">Marcado</span></span>
         </a>
         <div class="footer-links">
           <a href="privacy.html">Política de privacidade</a>
@@ -233,5 +256,9 @@
     })();
   </script>
 
+  <!-- Este script controla o funcionamento do menu mobile da navbar em celulares e tablets. -->
+  <script src="menu-mobile.js"></script>
+
 </body>
+
 </html>
