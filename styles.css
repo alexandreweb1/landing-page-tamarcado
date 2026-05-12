@@ -126,6 +126,7 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--tm-ink-500);
+  margin-top: 15px;
 }
 .tm-wordmark {
   font-family: var(--tm-font-display);
@@ -964,6 +965,7 @@ section.tight {
 /* ────────── Categorias ────────── */
 .section-categorias {
   background: var(--tm-cream-100);
+  margin-top: 15px;
 }
 .cat-grid {
   display: grid;
@@ -1120,6 +1122,7 @@ section.tight {
   justify-content: center;
   position: relative;
   width: 100%;
+  margin-top: 15px;
 }
 .split-mock-bg {
   position: absolute;
