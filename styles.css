@@ -126,7 +126,7 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.14em;
   color: var(--tm-ink-500);
-  margin-top: 15px;
+  margin-top: 50px;
 }
 .tm-wordmark {
   font-family: var(--tm-font-display);
@@ -966,6 +966,7 @@ section.tight {
 .section-categorias {
   background: var(--tm-cream-100);
   margin-top: 15px;
+  margin-bottom: 25px;
 }
 .cat-grid {
   display: grid;
@@ -1089,18 +1090,30 @@ section.tight {
   display: flex;
   gap: var(--tm-s-3);
   align-items: flex-start;
+  width: 100%;
+}
+.feature-list li > div {
+  flex: 1;
+  min-width: 0;
 }
 .feature-check {
   width: 24px;
   height: 24px;
+  min-width: 24px;
+  flex: 0 0 24px;
   border-radius: 50%;
   background: var(--tm-emerald-700);
   color: var(--tm-cream-50);
-  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2px;
+  margin-top: 3px;
+  line-height: 1;
+}
+.feature-check svg {
+  width: 13px;
+  height: 13px;
+  display: block;
 }
 .feature-list h4 {
   font-family: var(--tm-font-display);
@@ -1110,7 +1123,7 @@ section.tight {
   letter-spacing: -0.015em;
   margin: 0;
 }
-.feature-list span {
+.feature-list li > div > span {
   display: block;
   font-size: 14px;
   color: var(--tm-ink-700);
@@ -1321,6 +1334,7 @@ section.tight {
 /* ────────── Roadmap ────────── */
 .section-roadmap {
   background: var(--tm-cream-100);
+  margin-top: 15px;
 }
 .roadmap {
   display: grid;
@@ -1382,6 +1396,8 @@ section.tight {
   position: relative;
   overflow: hidden;
   text-align: center;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 .cta-card::before {
   content: "";
